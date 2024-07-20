@@ -1,0 +1,38 @@
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .page-numbers {
+    color: $color-text;
+    @include fz-20;
+    font-weight: 600;
+    padding: 0 2.1rem;
+    @include transition;
+    &:hover {
+      color: $color-second;
+    }
+    &.is-current {
+      color: $color-second;
+    }
+    &.is-prev,
+    &.is-next {
+      img {
+        @include box(1.6rem);
+      }
+      &:hover {
+        img {
+          filter: brightness(0) saturate(100%) invert(51%) sepia(65%)
+            saturate(1902%) hue-rotate(41deg) brightness(96%) contrast(101%);
+        }
+      }
+    }
+    &.is-prev {
+      img {
+        transform: rotate(-180deg);
+      }
+    }
+    &.is-disable {
+      display: none;
+    }
+  }
+}

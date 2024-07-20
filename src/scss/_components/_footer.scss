@@ -1,0 +1,315 @@
+.footer-main {
+  background: $color-pri;
+  overflow: hidden;
+  padding: 6.2rem 0;
+
+  @include max(575.98px) {
+    padding-block: 4rem;
+  }
+
+  .footer-title {
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0rem;
+      left: 0;
+      width: 7.4rem;
+      height: 0.3rem;
+      background: #ebc13b;
+    }
+  }
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.3rem;
+  row-gap: 5rem;
+
+  @include max(1199.98px) {
+    margin: 0 -0.75rem;
+  }
+}
+
+.footer-box {
+  padding: 0 1.3rem;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    width: calc(3 / 12 * 100%);
+  }
+
+  &:nth-child(3) {
+    width: calc(2 / 12 * 100%);
+  }
+
+  &:last-child {
+    flex: 1;
+  }
+
+  .header-logo {
+    justify-content: flex-start;
+    margin-bottom: 3.2rem;
+    display: flex;
+    // img {
+    //   height: 18.2rem;
+    // }
+
+    @include max(575.98px) {
+      justify-content: center;
+
+      img {
+        height: 12rem;
+      }
+    }
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.6rem;
+
+    gap: 1.6rem;
+
+    & > .menu-item {
+      padding: 0.3rem 0;
+
+      &::before {
+        bottom: -0.1rem;
+        left: 0;
+        transform: unset;
+      }
+    }
+  }
+
+  .menu-link {
+    @include fz-14;
+    font-weight: 400;
+    line-height: 171.429%;
+    color: #fff;
+  }
+
+  @include max(1199.98px) {
+    padding: 0 0.75rem;
+  }
+
+  @include max(991.98px) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 50%;
+    }
+
+    &:nth-child(3) {
+      width: 50%;
+    }
+  }
+
+  @include max(575.98px) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 100%;
+    }
+
+    &:nth-child(3) {
+      width: 100%;
+    }
+  }
+}
+
+.footer-item {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 172%;
+
+  &:not(:first-child) {
+    margin-top: 1.6rem;
+  }
+
+  @include max(1199.98px) {
+    column-gap: 0.8rem;
+  }
+
+  > span {
+    margin-inline: -0.8rem;
+  }
+}
+
+.support {
+  margin-top: 4rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.01rem;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.support-phone {
+  color: $color-second;
+  @include fz-30;
+  font-weight: 700;
+  line-height: 80%;
+  letter-spacing: -0.05rem;
+}
+
+.social {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.social-item {
+  img {
+    height: 1.8rem;
+    @include transition;
+  }
+
+  &:hover {
+    img {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.footer-title {
+  color: #fff;
+  @include fz-20;
+  font-weight: 700;
+  line-height: 230%;
+}
+
+.footer-text {
+  color: $color-second;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 171.429%;
+}
+
+.footer-group {
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  &:not(:last-child) {
+    .menu {
+      margin-bottom: 7rem;
+
+      @include max(575.98px) {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  .footer-list {
+    margin-top: 1.6rem;
+  }
+}
+
+.install {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+
+  @include max(1199.98px) {
+    gap: 1rem;
+  }
+}
+
+.install-link {
+  padding: 0.8rem 2.4rem;
+  border-radius: 10rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: $color-pri;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 171.429%;
+  @include transition;
+  cursor: pointer;
+
+  img {
+    @include box(4rem);
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  @include max(1199.98px) {
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+
+  @include max(1199.98px) {
+    gap: 1rem;
+  }
+}
+
+.app-link {
+  @include transition;
+  cursor: pointer;
+  display: block;
+
+  img {
+    height: 5rem;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  @include max(1199.98px) {
+    img {
+      height: 4.6rem;
+    }
+  }
+}
+
+.facebook {
+  border-radius: 0.8rem;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    max-height: 20.4rem;
+    height: fit-content;
+  }
+}
+
+.copyright {
+  padding: 1.6rem 1.5rem;
+  background: $color-second;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.4rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  --font-pri: "Roboto", serif;
+  --size-hd: 10rem;
+}
+
+$color-pri: #ed1c24;
+$color-second: rgb(231, 176, 168);
+$color-text: rgba(27, 36, 78, 0.7);
+$header: 7.5rem;
+@mixin max($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}

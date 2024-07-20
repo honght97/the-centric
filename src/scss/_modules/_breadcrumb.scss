@@ -1,0 +1,68 @@
+.breadcrumb-list {
+  display: flex;
+  padding: 1.6rem 0;
+}
+
+.breadcrumb-item {
+  color: #333;
+  font-family: Montserrat;
+  @include fz-14;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+
+  white-space: nowrap;
+
+  @include max(524.98px) {
+    @include fz-12;
+  }
+
+  &:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: none;
+    cursor: default;
+
+    a,
+    span {
+      padding-right: 0;
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  &.is-current {
+    font-weight: 700;
+
+    a {
+      margin: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding-right: 0.8rem;
+    margin-right: 0.8rem;
+    @include transition;
+    &::after {
+      content: "";
+      display: block;
+      width: 0.1rem;
+      height: 1.2rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      right: 0.8rem;
+    }
+    &:hover {
+      color: $color-second;
+      text-decoration: underline;
+    }
+  }
+}

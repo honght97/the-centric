@@ -1,0 +1,239 @@
+extends _layout/default
+
+block vars
+  -title        = 'Homepage'
+  -description  = ''
+  -keywords     = ''
+  -og_title     = ''
+  -url          = ''
+  -pageID       = 'homepage'
+  -path         = '.'
+
+block scripts
+
+block container
+  #menu1.menu-href
+    .video-slider-ct
+      iframe(width='560', height='315', src='https://www.youtube.com/embed/w2I5vWinuVc?autoplay=1&mute=1&controls=0&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', referrerpolicy='strict-origin-when-cross-origin', allowfullscreen='' loop autoplay muted)
+  section#menu2.menu-href
+    .container
+      .heading(data-aos="fade-up")
+        h2.title Tổng quan dự án
+        p Xuôi theo dòng sông Cấm yên ả, một Thành phố mới đang dần hiện hữu với dòng chảy thông thương đổ về thương cảng phồn vinh . Với điểm đầu là Quảng trường trung tâm thành phố, tới Trung tâm Chính trị – Hành chính mới được lấy cảm hứng từ những tàu thuyền giao thương tấp nập trên dòng sông Cấm và Trung tâm Hội Nghị – Biểu diễn quy mô nhất miền Bắc lấy cảm hứng từ những gợn sóng lan trên mặt biển. Điểm cập bến của những dòng chảy thịnh vượng đổ về và lập nên một điểm đến thương mại sầm uất tại nơi vùng đất mới mang tên THE CENTRIC.
+      .intro-wrap
+        .intro-slide(data-aos="fade-right")
+          .swiper.introSlide
+            .swiper-wrapper
+              .swiper-slide
+                +img("home/intro_1.jpg")
+              .swiper-slide
+                +img("home/intro_2.jpg")
+              .swiper-slide
+                +img("home/intro_3.jpg")
+              .swiper-slide
+                +img("home/intro_4.jpg")
+            .swiper-pagination
+        .intro-content(data-aos="fade-left")
+          .intro-text
+            ul
+              li Chủ đầu tư: Masterise Homes
+              li Tổng diện tích đất dự án: 7.2 ha
+              li Mật độ xây dựng: 28%
+              li Quy mô phát triển: 220 căn nhà ở thấp tầng
+              li Loại hình phát triển: Shoptique
+              li Thời điểm khởi công: Năm 2024
+              li Thời điểm bàn giao: Tháng 6/2026
+              li Hình thức sở hữu: 50 năm
+          .intro-owner
+            +img("home/Masterise-Homes-Avatar.jpg")
+  section#menu3.menu-href
+    .container
+      .intro-wrap.intro2
+        .intro-slide(data-aos="fade-left")
+          .swiper-slide
+            +img("home/maps.jpg")
+        .intro-content(data-aos="fade-right")
+          .heading
+            h2.title VỊ TRÍ ĐỘC TÔN KIẾN TẠO TRỤC THỊNH VƯỢNG
+            p Tiếp giáp các tuyến đường giao thông huyết mạch như: quốc lộ 10, đường 359, đường Đỗ Mười, đường Hoàng Văn Thụ; THE CENTRIC dễ dàng kết nối tới các công trình, tiện ích hàng đầu của thành phố chỉ trong vài phút di chuyển.
+          .location-slide.js-location
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  p.time-address Trung tâm Hội nghị – Biểu diễn TP Hải Phòng
+                  .time
+                    strong.time-number 1
+                    span phút
+                .swiper-slide
+                  p.time-address Trung tâm Chính trị – Hành chính TP Hải Phòng
+                  .time
+                    strong.time-number 2
+                    span phút
+                .swiper-slide
+                  p.time-address Quảng trường Bắc Sông Cấm
+                  .time
+                    strong.time-number 2
+                    span phút
+                .swiper-slide
+                  p.time-address Cầu Hoàng Văn Thụ
+                  .time
+                    strong.time-number 5
+                    span phút
+                .swiper-slide
+                  p.time-address Cảng Hải Phòng
+                  .time
+                    strong.time-number 10
+                    span phút
+                .swiper-slide
+                  p.time-address Nhà hát TP Hải Phòng
+                  .time
+                    strong.time-number 10
+                    span phút
+                .swiper-slide
+                  p.time-address Aeon Mall Hải Phòng
+                  .time
+                    strong.time-number 15
+                    span phút
+                .swiper-slide
+                  p.time-address Cảng hàng không quốc tế Cát Bi
+                  .time
+                    strong.time-number 20
+                    span phút
+            .swiper-pagination
+            .swiper-button-prev
+              +img("home/right.svg")
+            .swiper-button-next
+              +img("home/right.svg")
+  section#menu4.menu-href
+    .container
+      .heading(data-aos="fade-up")
+        h2.title CẢM HỨNG BẤT TẬN KIẾN TẠO “TRỤC THỊNH VƯỢNG”
+        p Bừng sáng thiết kế cảnh quan lấy cảm hứng từ những “chất liệu” đặc trưng của phố Cảng, THE CENTRIC đích thực là điểm đến tôn vinh văn hóa bản địa - nơi người dân địa phương có thể tự hào giới thiệu với bạn bè trong nước và thế giới!
+      .js-hero.hero-slide(data-aos="fade-up")
+        ul.swiper-wrapper
+          li.swiper-slide
+            .hero-img
+              +img("home/hero_1.jpg")
+            .hero-inner
+              .container
+                .hero-content
+                  p.desc Khám phá
+                  h2.title
+                    span Trung tâm&#160;
+                    br
+                    span Trong lòng trung tâm
+          li.swiper-slide
+            .hero-img
+              +img("home/hero_2.jpg")
+            .hero-inner
+              .container
+                .hero-content
+                  p.desc Điểm đến
+                  h2.title
+                    span Đa Trải nghiệm&#160;
+                    br
+                    span Đa văn hóa
+          li.swiper-slide
+            .hero-img
+              +img("home/hero_3.jpg")
+            .hero-inner
+              .container
+                .hero-content
+                  p.desc Trải nghiệm
+                  h2.title
+                    span Open-Air Shoping Center&#160;
+                    br
+                    span Đầu tiên tại Hải phòng
+          li.swiper-slide
+            .hero-img
+              +img("home/hero_4.jpg")
+            .hero-inner
+              .container
+                .hero-content
+                  p.desc The Centric
+                  h2.title
+                    span Thiết kế “đo ni”&#160;
+                    br
+                    span Cho riêng Hải Phòng
+          li.swiper-slide
+            .hero-img
+              +img("home/hero_5.jpg")
+        .swiper-pagination
+      .options-wrap
+        .heading(data-aos="fade-up")
+          h2.title Hệ thống tiện ích - nâng tầm trải nghiệm sống
+          p The Centric mang đến một chuỗi tiện ích đẳng cấp, đáp ứng mọi nhu cầu của cuộc sống hiện đại.
+        .options(data-aos="fade-up")
+          .option.active(style='--optionBackground:url("../images/home/option_1.jpg");')
+          .option(style='--optionBackground:url(../images/home/option_2.jpg);')
+          .option(style='--optionBackground:url(../images/home/option_3.jpg);')
+          .option(style='--optionBackground:url(../images/home/option_4.jpg);')
+          .option(style='--optionBackground:url(../images/home/option_5.jpg);')
+          .option(style='--optionBackground:url(../images/home/option_6.jpg);')
+  section#menu5.menu-href
+    .container
+      .heading(data-aos="fade-up")
+        h2.title Tin tức
+      .js-news-feed(data-aos="fade-up")
+        .news-feed.swiper-wrapper
+          .article-item.swiper-slide
+            .article-card
+              +self("", "article-picture")
+                .article-img
+                  +img("home/intro_3.jpg")
+              .article-content
+                h3.article-title
+                  +self("Masterise Homes công bố dự án đầu tiên ở Hải Phòng")
+                p.article-desc
+                  span The Centric là tổ hợp thương mại, giải trí, văn hóa quy mô 7,2 ha, nằm ngay trung tâm Thủy Nguyên, đánh dấu lần đầu Masterise Homes "chào sân" thị
+                .article-more
+                  +self("Xem chi tiết")
+                    +img("common/ico_more.svg")
+          .article-item.swiper-slide
+            .article-card
+              +self("", "article-picture")
+                .article-img
+                  +img("home/intro_3.jpg")
+              .article-content
+                h3.article-title
+                  +self("Giá trị di sản trong dự án hàng hiệu Grand Marina Saigon")
+                p.article-desc
+                  span TP HCMMasterise Homes lưu giữ lịch sử của mảnh đất Ba Son trong dự án Grand Marina, đồng thời tiếp nối giá trị di sản cho nhiều thế hệ chủ nhân của các căn hộ hàng hiệu.
+                .article-more
+                  +self("Xem chi tiết")
+                    +img("common/ico_more.svg")
+          .article-item.swiper-slide
+            .article-card
+              +self("", "article-picture")
+                .article-img
+                  +img("home/intro_3.jpg")
+              .article-content
+                h3.article-title
+                  +self("Đại gia bất động sản đua đổ bộ Hải Phòng")
+                p.article-desc
+                  span Hải Phòng gần đây liên tục đón loạt đại gia địa ốc như Vinhomes, Masterise, Geleximco, Flamingo... với các dự án có vốn lên đến hàng chục nghìn tỷ đồng.
+                .article-more
+                  +self("Xem chi tiết")
+                    +img("common/ico_more.svg")
+        .swiper-pagination
+  section#menu6.menu-href.tc-wrap
+    .container
+      .header-logo(data-aos="fade-up")
+        a(href="/" target="_self")
+          +img("home/logo.png")
+      .heading(data-aos="fade-up")
+        h2.title Đăng ký nhận thông tin
+      form(action="")(data-aos="fade-up")
+        .form-group
+          +Input("HỌ TÊN", 'Nhập họ tên của bạn' )
+          +Input("EMAIL", 'Nhập Email của bạn', 'email', 'input2')
+          +Input("SỐ ĐIỆN THOẠI", 'Nhập số điện thoại' )
+        label.form-label
+          span.form-text NỘI DUNG TIN NHẮN
+          textarea.form-input(name="" placeholder="Nhập nội dung tin nhắn")
+        .form-btn
+          +self("Gửi yêu cầu", 'btn')
+
+
+
+
