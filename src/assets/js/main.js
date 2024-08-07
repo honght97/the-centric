@@ -16,6 +16,6 @@ window.addEventListener("DOMContentLoaded", () => {
   // Component
   SwiperModule();
   //GalleryModule();
-  // MenuModule();
+  MenuModule();
   FormMoudule();
 });

@@ -115,7 +115,7 @@ export default function MenuModule() {
 
   let mainHeight = vh(100) - heightFooter;
   if ($(".main").length) {
-    // $(".main").css("padding-top", heightHeight);
+    $(".main").css("padding-top", heightHeight);
     $(".main").css("min-height", mainHeight);
   }
 
