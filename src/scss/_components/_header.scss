@@ -146,12 +146,12 @@ header {
 }
 .header-sign,
 .header-nav {
-  @include max(767.98px) {
+  @include max(1199.98px) {
     display: none;
   }
 }
 .header-sign {
-  @include min(768px) {
+  @include min(1200px) {
     .menu-item {
       &::before {
         bottom: -0.2rem;
@@ -167,7 +167,8 @@ header {
   padding: 0 1.5rem;
   user-select: none;
   position: relative;
-  @include min(768px) {
+  margin-left: 1.5rem;
+  @include min(1200px) {
     display: none;
   }
 }
@@ -176,7 +177,7 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #000;
+  background: #fff;
   display: block;
   height: 0.22rem;
   transition: background ease 0.3s, top ease 0.3s 0.3s, transform ease 0.3s;
@@ -189,7 +190,7 @@ header {
   }
   &::before,
   &::after {
-    background: #000;
+    background: #fff;
     content: "";
     display: block;
     height: 0.22rem;
@@ -201,7 +202,7 @@ header {
 
 // header mobile
 .header-mobile {
-  @include min(768px) {
+  @include min(1200px) {
     display: none;
   }
   display: flex;

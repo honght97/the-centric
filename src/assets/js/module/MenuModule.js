@@ -1,6 +1,6 @@
 export default function MenuModule() {
   let width = $(window).width();
-  if (width < 992) {
+  if (width < 1200) {
     if ($(".js-bar").length) {
       $(".js-bar").on("click", function () {
         $(".js-header-mobile").addClass("is-active");

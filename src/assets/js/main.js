@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Animation
   AosModule();
   // Tab
-  TabModule();
+  // TabModule();
   // Select
   //Select2Module();
   // Component

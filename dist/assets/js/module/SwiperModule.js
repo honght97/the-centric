@@ -79,4 +79,19 @@ export default function SwiperModule() {
       },
     });
   }
+  if ($(".js-hero3").length) {
+    var swiperHero2 = new Swiper(".js-hero3", {
+      autoplay: true,
+      slidesPerView: "auto",
+      effect: "fade",
+      loop: "infinite",
+      speed: 1200,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 10,
+      },
+    });
+  }
 }
