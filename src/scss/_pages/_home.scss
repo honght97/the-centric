@@ -438,3 +438,18 @@
     min-width: 15rem;
   }
 }
+.policy {
+  padding: 2.5rem 0;
+  .hero-img {
+    &::before {
+      content: unset;
+    }
+    padding-top: calc(1520 / 1728 * 100%);
+  }
+  .swiper-pagination-bullet {
+    background: #e7b0a8;
+  }
+  .swiper-pagination {
+    bottom: -2rem;
+  }
+}

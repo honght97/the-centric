@@ -90,7 +90,7 @@ const build = gulp.series(
   style,
   html,
   copyAsset,
-  optimizeImages,
+  // optimizeImages,
   watch
 );
 
@@ -99,6 +99,6 @@ exports.cleanSource = cleanSource;
 exports.style = style;
 exports.html = html;
 exports.build = build;
-exports.optimage = optimizeImages;
+// exports.optimage = optimizeImages;
 exports.watch = watch;
 exports.default = build;
